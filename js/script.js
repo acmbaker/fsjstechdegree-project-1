@@ -45,21 +45,21 @@ function printQuote() {
   `;
 
   //if statements that check for empty classes
-  if ( selector[1] !== '') {
+  if ( selector.citation !== '') {
     html += `<span class="citation">${selector.citation}</span>`;
   }
 
-  if ( selector[3] !== '') {
+  if ( selector.year !== '') {
     html += `<span class="year">${selector.year}</span>`;
   }
 
   //category of quote (extra credit hopefully :D)
-  if ( selector[4] !== '') {
+  if ( selector.tags !== '') {
     html += `<br/><span class="tags">${selector.tags}</span>`;
   }
 
   //bonus if statement for wikipedia page link to read more (extra credit hopefully :D)
-  if ( selector[5] !== '') {
+  if ( selector.wikipage !== '') {
     html += ` &amp; <span class="wikipedia"><a href="${selector.wikipage}" target="_blank">View Wikipedia</a></span>`
   }
 
